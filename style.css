@@ -1,3 +1,27 @@
+
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+
+img {
+  display: block;
+  margin: auto;
+}
+
+
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
@@ -15,10 +39,28 @@ header {
     margin-bottom: 20px;
 }
 
+
+*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
+
+
 h1 {
     margin-top: 0;
     font-size: 2.5em;
-    border-bottom: 3px solid #cc0000; /* Red for urgency */
+    border-bottom: 3px solid #cc0000; 
     padding-bottom: 10px;
 }
 
@@ -28,11 +70,12 @@ h1 {
     opacity: 0.9;
 }
 
-.byline {
-    font-size: 0.9em;
+.meta{
+font-size: 0.9em;
     margin-top: 10px;
     opacity: 0.8;
 }
+
 
 
 .banner-photo-placeholder {
@@ -47,6 +90,13 @@ h1 {
     display: block;
 }
 
+.center-image {
+  display: block; /* Makes the image a block-level element */
+  margin-left: auto; /* Distributes available space equally on the left */
+  margin-right: auto; /* Distributes available space equally on the right */
+  max-width: 100%; /* Optional: Ensures image doesn't overflow its container */
+  height: auto; /* Optional: Maintains aspect ratio when resizing */
+}
 
 main {
     max-width: 960px;
@@ -69,6 +119,17 @@ h2 {
     margin-bottom: 15px;
     border-left: 5px solid #0056b3;
     padding-left: 10px;
+}
+
+
+h6 {
+    color: #003366; 
+    font-size: 0.8em;
+    margin-top: 0;
+    margin-bottom: 1px;
+    border-left: 5px solid #0056b3;
+    padding-left: 10px;
+    text-align: center;
 }
 
 #legal-context ul li {
@@ -94,7 +155,7 @@ h2 {
 }
 
 .data-viz {
-    height: 350px;
+    height: 800px;
     background-color: #e8e8e8;
     color: #555;
     display: flex;
