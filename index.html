@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
     <title>Thousands Left in the Cold: What 311 Complaints Reveal About NYC Housing</title>
     <link rel="stylesheet" href="style.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
 </head>
 <body>
     <header>
@@ -13,10 +25,15 @@
         </div>
         <h1>Thousands left in the cold: What 311 complaints reveal about NYC housing</h1>
         <p class="subhead">As the city heads into another winter cycle, tens of thousands of renters will once again wait to see whether the heat turns on when they need it most</p>
-        <p class="byline">By Che de los Reyes</p>
+    
+    <p class="meta"><span class="byline">By Che de los Reyes</span> • <time datetime="2025-11-23">Nov. 23, 2025</time></p>
+
     </header>
 
     <img src="./Morris_Houses.jpg" width="365px" height="450px">
+    <h6>The Morris Houses is one of the New York City Housing Authority's developments in the South Bronx Photo credit: Che de los Reyes</h6>
+
+
     <main>
         <section id="salcedo-story">
            
@@ -55,8 +72,11 @@
             
             <div class="data-viz">
                 <h3>311 Heat and Hot Water Complaints by Borough</h3>
-             
-                <p><div style="min-height:696px" id="datawrapper-vis-c2JGW"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/c2JGW/embed.js" charset="utf-8" data-target="#datawrapper-vis-c2JGW"></script><noscript><img src="https://datawrapper.dwcdn.net/c2JGW/full.png" alt="This chart shows the number of “Heat” and “Hot Water” 311 complaints logged by the Department of Housing Preservation and Development (HPD) across the different boroughs in the last 3 years during “heat season,” or from Oct. 1-May 31." /></noscript></div>
+            
+
+                    <iframe title="Heat-related complaints during &quot;heat season&quot; in New York City from 2022-23 to 2024-25" aria-label="Grouped column chart" id="datawrapper-chart-c2JGW" src="https://datawrapper.dwcdn.net/c2JGW/6/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="696" data-external="1"></iframe>  
+
+
             </div>
         </section>
 
@@ -71,27 +91,34 @@
             </div>
 
             <p>In some developments, like Morris Houses in the South Bronx, structural woes and aging infrastructure compound the problem.</p> 
-            
+
             <div class="quote-box">
                 <p class="quote">"In the wintertime, there's always at least one building, one line, that doesn't have any heat,” said Regina Carter, president of the Morris Houses Tenants Association."</p>
             </div>
 
-            <p>Even when the heat is on, she said, her apartment remains cold because it isn't well insulated. Drafts come in because the windows do not fit in the frames perfectly.</p>       
+            <p>Even when the heat is on, she said, her apartment remains cold because it isn't well insulated. Drafts come in because the windows do not fit in the frames perfectly.</p>
+
+       
         </section>
 
 <section id="systemic-issues">
             <h2>Complaint volumes are rising citywide</h2>
-            <p>Last heat season, the Bronx logged more than 58,000 311 heating-related complaints, the highest of all boroughs.</p>
-            <p>Brooklyn consistently ranked second, with complaints surpassing 60,000 every heat season and rising again this past winter.</p>
+            <p>Last heat season, the Bronx logged more than 100,000 heating-related complaints, the highest of all boroughs.</p>
+            <p>Brooklyn consistently ranked second, with complaints surpassing 60,000 every heat season. This past winter, it surpassed 70,000.</p>
             <p>Manhattan, while third in total complaints, had the highest share of slow closures. About 5% of Manhattan cases took more than five days to resolve, far higher than other boroughs.</p> 
             <p>The volume of complaints increased 5% year-on-year from the 2022–2023 season to 2023–2024. The increase spiked to 19% from 2023–2024 to 2024–2025. 
             <p>Among the boroughs, Brooklyn and Manhattan have shown steadily increasing heating system strain.</p>
-            <p>Staten Island consistently logged the lowest number of heating complaints.</p>
-        
+            <p>Staten Island consistently logged the lowest number of heating complaints, hovering around the 3,000 mark, and was thus excluded from this analysis.</p>
+
+         
     </main>
 
     <footer>
         <p>Source Material: <a href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9/data_preview"> NYC 311 data. </a></p>
     </footer>
+
+     <script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+        
+
 </body>
 </html>
